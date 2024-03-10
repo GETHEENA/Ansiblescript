@@ -1,14 +1,14 @@
 # Example playbook
 ---
 - name: tasks for assign1 on slave1
-  hosts: one
+  hosts: 174.129.63.51
   become: true
   tasks:
     - name: install Apache2
       apt: name=apache2 state=latest
 
 - name: tasks for assign1 on slave2
-  hosts: two
+  hosts: 54.162.253.153 
   become: true
   tasks:
     - name: install Nginx
